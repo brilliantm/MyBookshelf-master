@@ -7,8 +7,10 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
+        maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
         maven { url 'https://maven.fabric.io/public' }
         maven { url 'https://plugins.gradle.org/m2/' }
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.0'
@@ -26,6 +28,7 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
+        mavenLocal()
         maven { url "https://jitpack.io" }
         maven { url 'https://maven.google.com/' }
         maven { url 'https://github.com/psiegman/mvn-repo/raw/master/releases' }
